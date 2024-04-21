@@ -1,0 +1,6 @@
+[
+    {"Name": "Jenkins", "Port": 8080},
+    {"Name": "Sonarqube", "Port": 9000},
+    {"Name": "Grafana", "Port": 3000},
+    {"Name": "Application", "Port": 80}
+]
