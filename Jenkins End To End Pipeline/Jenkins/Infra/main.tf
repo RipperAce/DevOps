@@ -22,31 +22,31 @@ resource "aws_instance" "jenkins_server" {
     user_data = file("./install_jenkins.sh")
 
     volume_tags = {
-    Name = "Jenkins-Server"
-    Product = "Studio"
-    BudgetTeam = "FMC"
-    Service = "CI"
-    Environment = "dev"
-    EnvType = "non-prod"
-    DeleteProtection = "5"
-    ShutdownProtection = "0"
-    Team = "FMC"
-    Owner = "random@gmail.com"
-    CC = "True"
-    map-migrated = "d-server-00p12lc5ca5o8n"
-  }
-  tags = {
-    Name = "Jenkins-Server"
-    Product = "Studio"
-    BudgetTeam = "FMC"
-    Service = "CI"
-    Environment = "dev"
-    EnvType = "non-prod"
-    DeleteProtection = "5"
-    ShutdownProtection = "0"
-    Team = "FMC-Studio"
-    Owner = "random@gmail.com"
-    CC = "True"
-    map-migrated = "mig40419"
-  }
+      Name = "Jenkins-Server"
+      Product = "Studio"
+      BudgetTeam = "FMC"
+      Service = "CI"
+      Environment = "dev"
+      EnvType = "non-prod"
+      DeleteProtection = "5"
+      ShutdownProtection = "0"
+      Team = "FMC"
+      Owner = "random@gmail.com"
+      CC = "True"
+      map-migrated = "d-server-00p12lc5ca5o8n"
+    }
+    tags = {
+      Name = "Jenkins-Server"
+      Product = "Studio"
+      BudgetTeam = "FMC"
+      Service = "CI"
+      Environment = "dev"
+      EnvType = "non-prod"
+      DeleteProtection = "5"
+      ShutdownProtection = "0"
+      Team = "FMC-Studio"
+      Owner = "random@gmail.com"
+      CC = "True"
+      map-migrated = "mig40419"
+    }
 } 
